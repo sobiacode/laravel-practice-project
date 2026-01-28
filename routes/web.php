@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return  "This is my Laravel practice project";
 });
+Route::get('/about', function() {
+    return view('about'); 
+
+});
 
 Route::middleware([
     'auth:sanctum',
