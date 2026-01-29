@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return  "This is my Laravel practice project";
+    return  ('welcome');
 });
+ // About page route for practice project
 Route::get('/about', function() {
     return view('about'); 
 
